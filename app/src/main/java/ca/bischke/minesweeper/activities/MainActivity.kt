@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
 
     fun buttonStart(view: View) {
         val intent = Intent(this@MainActivity, GameActivity::class.java)
-        intent.putExtra("Width", 8)
+        intent.putExtra("Width", 10)
+        intent.putExtra("Height", 10)
         startActivity(intent)
     }
 }
